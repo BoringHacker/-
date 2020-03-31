@@ -49,11 +49,11 @@ vector < string > case4(string filepath, string filename) {
 	return ShowFileList(filename);
 }
 void MainMenu() {
-	printf("ËµÃ÷£º\n");
-	printf("ÅúÁ¿ÖØÃüÃû£¬¸ñÊ½ÎªÇ°×ºÃû+Êı×Ö±êºÅ+ºó×ºÃû+ÎÄ¼ş¸ñÊ½\n");
-	printf("Èç¹û²»ĞèÒªÇ°×ºÃû/ºó×ºÃû/ÎÄ¼ş¸ñÊ½ÄÇÃ´ÊäÈë*¼´¿É\n");
-	printf("×÷Õß£ºBoringHacker(²¿·Ö´úÂëÀ´×ÔÍøÂç)\n");
-	printf("ÍøÕ¾£ºhttps://boringhacker.github.io\n");
+	printf("è¯´æ˜ï¼š\n");
+	printf("æ‰¹é‡é‡å‘½åï¼Œæ ¼å¼ä¸ºå‰ç¼€å+æ•°å­—æ ‡å·+åç¼€å+æ–‡ä»¶æ ¼å¼\n");
+	printf("å¦‚æœä¸éœ€è¦å‰ç¼€å/åç¼€å/æ–‡ä»¶æ ¼å¼é‚£ä¹ˆè¾“å…¥*å³å¯\n");
+	printf("ä½œè€…ï¼šBoringHacker(éƒ¨åˆ†ä»£ç æ¥è‡ªç½‘ç»œ)\n");
+	printf("ç½‘ç«™ï¼šhttps://boringhacker.github.io\n");
 }
 string check(string str) {
 	return str == "*" ? "\0" : str;
@@ -72,15 +72,15 @@ int main() {
 	MainMenu();
 	system("pause");
 	system("CLS");
-	printf("ÊäÈëÎÄ¼ş¼ĞÎ»ÖÃ\n");
+	printf("è¾“å…¥æ–‡ä»¶å¤¹ä½ç½®\n");
 	cin >> filename;
-	printf("ÊäÈëÎÄ¼şÃûÇ°×º\n");
+	printf("è¾“å…¥æ–‡ä»¶åå‰ç¼€\n");
 	cin >> prefixName;
-	printf("ÊäÈëÊı×Ö±êºÅ´ÓÄÄÀï¿ªÊ¼\n");
+	printf("è¾“å…¥æ•°å­—æ ‡å·ä»å“ªé‡Œå¼€å§‹\n");
 	cin >> count;
-	printf("ÊäÈëÊı×ÖºóµÄÎÄ¼şÃûºó×º\n");
+	printf("è¾“å…¥æ•°å­—åçš„æ–‡ä»¶ååç¼€\n");
 	cin >> suffixName;
-	printf("ÊäÈëÖØÃüÃûÏŞ¶¨µÄÎÄ¼ş¸ñÊ½£¬Èç¹ûÃ»ÓĞ£¬ÊäÈë*\n");
+	printf("è¾“å…¥é‡å‘½åé™å®šçš„æ–‡ä»¶æ ¼å¼ï¼Œå¦‚æœæ²¡æœ‰ï¼Œè¾“å…¥*\n");
 	cin >> mssuffix;
 	filepath = "*."+ mssuffix;
 	system("CLS");
@@ -111,7 +111,7 @@ int main() {
 		++count;
 	}
 	
-	printf("ÖØÃüÃûÍê³É\n"); 
+	printf("é‡å‘½åå®Œæˆ\n"); 
 	system("pause");
 	return 0;
 }
